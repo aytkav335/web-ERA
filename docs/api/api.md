@@ -27,18 +27,18 @@ To let the server recognize EIP712 transactions, the `transaction_type` field is
 
 Instead of signing the RLP-encoded transaction, the user signs the following typed EIP712 structure:
 
-| Field name              | Type      |
-| ----------------------- | --------- |
-| txType                  | `uint8`   |
-| to                      | `address` |
-| value                   | `uint256` |
-| data                    | `bytes`   |
-| feeToken                | `address` |
-| ergsLimit               | `uint256` |
-| gasLimit                | `uint256` |
-| ergsPerPubdataByteLimit | `uint256` |
-| ergsPrice               | `uint256` |
-| nonce                   | `uint256` |
+| Field name              | Type      | Description                                                  |
+| ----------------------- | --------- | ------------------------------------------------------------
+| txType                  | `uint8`   | The zkSync transaction for which the fee should be estimated |
+| to                      | `address` | The zkSync transaction for which the fee should be estimated |
+| value                   | `uint256` | The zkSync transaction for which the fee should be estimated |
+| data                    | `bytes`   | The zkSync transaction for which the fee should be estimated |
+| feeToken                | `address` | The zkSync transaction for which the fee should be estimated |
+| ergsLimit               | `uint256` | The zkSync transaction for which the fee should be estimated |
+| gasLimit                | `uint256` | The zkSync transaction for which the fee should be estimated |
+| ergsPerPubdataByteLimit | `uint256` | The zkSync transaction for which the fee should be estimated |
+| ergsPrice               | `uint256` | The zkSync transaction for which the fee should be estimated |
+| nonce                   | `uint256` | 
 
 These fields are conveniently handled by our [SDK](./js/features.md).
 
